@@ -1074,7 +1074,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
@@ -1089,12 +1089,12 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #337ab7;
+  color: #cc99ff;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #23527c;
+  color: #6D2268;
   text-decoration: underline;
 }
 a:focus {
@@ -1173,7 +1173,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: inherit;
+  font-family: 'Average Sans', sans-serif;;
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
@@ -3854,10 +3854,14 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .input-group-btn:last-child > .btn-group {
   margin-left: -1px;
 }
-.nav {
+.  {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+  -webkit-transition: height;
+   transition-property:height;
+   transition-duration:2s;
+   transition-timing-function:ease;
 }
 .nav > li {
   position: relative;
@@ -4160,7 +4164,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-brand {
   float: left;
   height: 50px;
-  padding: 15px 15px;
+  padding: 40px 15px;
   font-size: 18px;
   line-height: 20px;
 }
@@ -4170,12 +4174,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-brand > img {
   display: block;
-}
-@media (min-width: 768px) {
-  .navbar > .container .navbar-brand,
-  .navbar > .container-fluid .navbar-brand {
-    margin-left: -15px;
-  }
 }
 .navbar-toggle {
   position: relative;
@@ -4239,8 +4237,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 @media (min-width: 768px) {
   .navbar-nav {
-    float: left;
-    margin: 0;
+    float: right;
+    margin: 22px 0 0 0px;
   }
   .navbar-nav > li {
     float: left;
@@ -4379,7 +4377,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-  background-color: #f8f8f8;
+  background-color: #d2ecdd;
   border-color: #e7e7e7;
 }
 .navbar-default .navbar-brand {
@@ -4391,10 +4389,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   background-color: transparent;
 }
 .navbar-default .navbar-text {
-  color: #777;
+  color: #777	;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #777;
+  color: #cc99ff;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
@@ -4845,12 +4843,20 @@ a.badge:focus {
 }
 .jumbotron h1,
 .jumbotron .h1 {
-  color: inherit;
+  color: #FFF;
 }
 .jumbotron p {
   margin-bottom: 15px;
-  font-size: 21px;
+  font-size: 25px;
   font-weight: 200;
+  color:#fff;
+}
+.jumbotron span.jumbotron-label {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #33cc66;
+  display:block;
+  margin-top:30px;
 }
 .jumbotron > hr {
   border-top-color: #d5d5d5;
@@ -4873,7 +4879,12 @@ a.badge:focus {
   }
   .jumbotron h1,
   .jumbotron .h1 {
-    font-size: 63px;
+    font-size: 50px;
+	font-family: 'Average Sans', sans-serif;
+  }
+  .jumbotron h2 {
+	font-size: 30px;
+	color:#fff;
   }
 }
 .thumbnail {
@@ -6564,3 +6575,51 @@ button.close {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+
+ /* shrink nav */
+
+
+nav.navbar.shrink {
+  min-height: 35px;
+   -webkit-transition: height;
+   transition-property:height;
+   transition-duration:2s;
+   transition-timing-function:ease;
+}
+
+nav.shrink a {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  font-size: 15px;
+}
+
+nav.shrink .navbar-brand {
+  font-size: 25px;
+}
+
+nav.shrink .navbar-toggle {
+  padding: 10px 7px;
+  margin: 13px 0px 8px 0;
+}
+
+nav.shrink .navbar-header .navbar-brand {
+			background: url('../img/GlowingSmilesIcon.png') no-repeat 12px center;
+			text-indent:-999999px;
+		}
+		
+nav.shrink  .navbar-nav {
+    float: right;
+    margin: 11px 0 0 0px;
+  }
+
+/* end shrink nav */	
+
+
+.navbar-header .navbar-brand {
+			background: url('../img/GlowingSmilesLogo.png') no-repeat center center;
+			height:61px;
+			width:143px;
+			text-indent:-999999px;
+		}
+
+.section h2, h2.section {margin-top:100px;}

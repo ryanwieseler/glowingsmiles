@@ -7,8 +7,9 @@
     <title>Glowing Smiles</title>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
+    <link href="css/bootstrap.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Average+Sans|Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
+	<!--<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>-->
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -26,13 +27,34 @@
 		}
 		h1 {margin-top:100px;}
 		footer{height:400px;}
+		
+		.jumbotron {
+			background: #ffffff url('img/spotlight_jumbo.png') no-repeat;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+		@media (min-width:300px) and (max-width:991px) {
+			.jumbotron {
+				background: #ffffff url('img/spotlight_jumbo_1000_02.png') no-repeat;
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+			} // idea for jumbotron image
+		}
+		
+		
 	</style>
   </head>
-  <body>
+  
+  <body data-spy="scroll" data-target=".navbar-default">
 	<header>
-		<<nav class="navbar navbar-default navbar-fixed-top">
+		<nav class="navbar navbar-default navbar-fixed-top">
 			<div class="container">
-				<div class="row"><div class="col-md-10 col-md-offset-1">
+				<div class="row">
+				<div class="col-md-12">
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#gs-nav">
@@ -54,15 +76,27 @@
 						<li><a id="nav-fb" href="https://www.facebook.com/pages/Glowing-Smiles-5k-and-Kids-Fun-Dash/377912885630641?fref=ts" target="_blank" class="last">Facebook</a></li>            
 					</ul>
 				</div>
-				</div></div>
+				</div>
 			</div>
-		</nav>
+			</div>
+		</nav><!-- end nav -->
 	</header>
+	<div class="jumbotron">
+		<div class="container">
+		<h1>Glowing Smiles<br>5k Run/Walk and Kids Dash</h1>
+		<span class="jumbotron-label">When</span>
+		<p class="date">May 9, 2015</p>
+		<span class="jumbotron-label">When</span>
+		<p class="location">Orchid Heights Park<br>Middleton, Wisconsin</p>
+		<span class="jumbotron-label">In Support for:</span>
+		<p>Lina Vergara Memorial Scholarship Fundraiser</p>
+		<p><a class="btn btn-primary btn-lg" href="#" role="button">Register now</a></p>
+		</div>
+	</div>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-10 col-md-offset-1">
-			<img src="glowing_smiles_spotlight.png" alt="Glowing Smiles" class="img-responsive" />
-				<section id="eventinfo">
+				<section class="section" id="eventinfo">
 					<h2>Event Information</h2>
 					<p>We are excited to present the Third Annual Glowing Smiles 5K Run/Walk and Kids Dash, which will be held on Saturday, May 9, 2015 at Orchid Heights Park. Adults and children of all ages, from Middleton and the State of Wisconsin, will join together in memory of Lina Vergara and to support the Lina Vergara Memorial Scholarship Fundraiser.</p>
 					<h3>Race Day</h3>
@@ -83,12 +117,12 @@
 						<li>Kids run for free!</li>
 					</ul>
 					<a href="https://www.signmeup.com/site/reg/register.aspx?fid=D92VVH7" target="_blank" class="btn btn-default" role="button">Register now</a>
-				<section>
+				</section>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-md-10 col-md-offset-1">
-				<section id="sponsors">
+				<section class="section" id="sponsors">
 					<h2>Sponsors</h2>
 					<p>While the primary focus of the race is to bring people together, it is also an opportunity to give back. As an important member of the local business community we are looking to you for your support. Please join us by making a monetary contribution or a gift donation to the Glowing Smiles 5K Run/Walk.</p>
 					<p>You have the opportunity to truly make a difference, while bringing awareness to your business. Your monetary donation will support the race and the Lina Vergara Memorial Scholarship a community event with more than 350 participants. Gift certificates and merchandise received are used as incentives to the top participants and in return will bring people to your business.</p>
@@ -160,58 +194,67 @@
 			</div>
 		</div>
 	
-		<div class="row about">
+		<div class="row">
 			<div class="col-md-9 col-md-offset-1">
-				<section id="about">
-					<h2>About</h2>
-					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-						  <!-- Indicators -->
-						  <ol class="carousel-indicators">
-							<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-							<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-							<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-						  </ol>
+					<h2 class="section" id="about">About</h2>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1">
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					</ol>
 
-						  <!-- Wrapper for slides -->
-						  <div class="carousel-inner" role="listbox">
-							<div class="item active">
-							  <img src="img/gs_female_winners_2014.jpg" alt="2014 Female winners (left to right): Debra Vaughan, (name unavailable), and Melissa Landsee">
-							  <div class="carousel-caption">
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<img src="img/gs_female_winners_2014.png" alt="2014 Female winners (left to right): Debra Vaughan, (name unavailable), and Melissa Landsee">
+							<div class="carousel-caption">
 								<caption>2014 Female winners (left to right): Debra Vaughan, (name unavailable), and Melissa Landsee</caption>
-							  </div>
 							</div>
-							<div class="item">
-							  <img src="img/gs_male_winners_2014.jpg" alt="2014 Male winners (left to right): Danny Chavez, Tony Falk, and Aaron Schut">
-							  <div class="carousel-caption">
-								<caption>2014 Male winners (left to right): Danny Chavez, Tony Falk, and Aaron Schut</caption>
-							  </div>
-							</div>
-							<div class="item">
-							  <img src="img/thankyou.png" alt="Thank you to all of the supporters">
-							</div>
-						  </div>
-
-						  <!-- Controls -->
-						  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-							<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-							<span class="sr-only">Previous</span>
-						  </a>
-						  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-							<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-							<span class="sr-only">Next</span>
-						  </a>
 						</div>
-					<div>
+						<div class="item">
+							<img src="img/gs_male_winners_2014.png" alt="2014 Male winners (left to right): Danny Chavez, Tony Falk, and Aaron Schut">
+							<div class="carousel-caption">
+								<caption>2014 Male winners (left to right): Danny Chavez, Tony Falk, and Aaron Schut</caption>
+							</div>
+						</div>
+						<div class="item">
+							<img src="img/thankyou.png" alt="Thank you to all of the supporters">
+							<div class="carousel-caption">
+								<caption>Thank you to everyone that has helped our cause!</caption>
+							</div>
+						</div>
+					 </div> <!--Close carousel inner-->
+					<!-- Controls -->
+					<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div> <!--close gener carousel example -->
+			</div><!-- close column -->
+		</div><!--close row-->
+			<div class="row">
+				<div class="col-md-9 col-md-offset-1">
+					<section>
 						<p>The Glowing Smiles 5k run / walk and kids fun dash is a fundraiser for the Lina Vergara Memorial Scholarship at UW-Oshkosh. Lina had a passion for teaching and caring for everyone’s needs. The scholarship will benefit elementary education students who share Lina’s desire to teach and assist others, especially those students at UW-Oshkosh that are adjusting to campus life or are struggling emotionally with the challenges they often face in college. Please register today and check back for event updates. We're also on Facebook.</p>
 						<p>We want to thank previous participants and sponsors from the bottom of our hearts for your tremendous support. Your contribution has not only been a tribute to our daugther and sister Lina Vergara, but will also benefit elementary education students who share Lina’s desire to teach and assist others, especially those students at UW-Oshkosh.</p>
 						<p>Thanks to your generous donation, we were able to award the 2014 Lina Vergara Memorial Endowment Scholarship to Melissa Koenig and 2014 Lina Vergara Middleton High School Memorial Scholarship to Sarah Pongratz!</p>
-					</div>
 				</section>
 			</div>
 		</div>
 		<div class="row linasstory">
 			<div class="col-md-9 col-md-offset-1">
-				<section id="linastory">
+				<section class="section" id="linastory">
 					<h2>Lina's Story</h2>
 					<p>Lina was only 20 years old when an accident took her life while she was rafting on the Wolf River. She loved life and nature, and she had a special passion for children. Lina wanted to become a third grade teacher, so after she graduated from Middleton High School, she enrolled at UW-Oshkosh and was about to start her junior year. Once she graduated, her goal was to teach kids and encourage them to build a better world. Please follow the link below to find out more about the three actions Lina's family decided to take after her sudden departure.</p><a href="http://www.linavergara.com" target="_blank" class="btn btn-default" role="button">Lina Vergara.com</a>
 				</section>
@@ -233,6 +276,7 @@
     <script src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/jquery.smooth-scroll.min.js"></script>
 	<script type="text/javascript" src="js/unslider.js"></script>
+	<script type="text/javascript" src="js/shrinknav.js"></script>
 	<script>
 		$(document).ready(function(){
 			$('ul a').smoothScroll();
