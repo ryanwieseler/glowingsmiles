@@ -3065,8 +3065,20 @@ fieldset[disabled] .btn-default.active {
 }
 .btn-primary {
   color: #fff;
-  background-color: #337ab7;
-  border-color: #2e6da4;
+  /*background-color: #4db177;*/
+  background-color:#268f52;
+  /*border-color: #2e6da4;*/
+  -o-transition:.25s;
+  -ms-transition:.25s;
+  -moz-transition:.25s;
+  -webkit-transition:.25s;
+  transition:.25s;
+}
+.jumbotron .btn-primary {
+	margin-top:30px;
+	margin-bottom:50px;
+	padding:20px 32px;
+	font-size:21px;
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -3075,8 +3087,8 @@ fieldset[disabled] .btn-default.active {
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
   color: #fff;
-  background-color: #286090;
-  border-color: #204d74;
+  background-color: #0f6834;
+  /*border-color: #204d74;*/
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -3870,7 +3882,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav > li > a {
   position: relative;
   display: block;
-  padding: 10px 15px;
+  padding: 10px 20px;
 }
 .nav > li > a:hover,
 .nav > li > a:focus {
@@ -4163,10 +4175,13 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-brand {
   float: left;
-  height: 50px;
-  padding: 40px 15px;
   font-size: 18px;
   line-height: 20px;
+	text-indent:-999999px;
+}
+.navbar-brand img {
+	width:77%;
+	margin:0 0 17px 20px;
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
@@ -4179,9 +4194,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   position: relative;
   float: right;
   padding: 9px 10px;
-  margin-top: 8px;
-  margin-right: 15px;
-  margin-bottom: 8px;
+	margin-top:30px;
   background-color: transparent;
   background-image: none;
   border: 1px solid transparent;
@@ -4244,8 +4257,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     float: left;
   }
   .navbar-nav > li > a {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    /*padding-top: 15px;
+    padding-bottom: 15px;*/
+	font-size:16px;
   }
 }
 .navbar-form {
@@ -4403,7 +4417,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   color: #555;
-  background-color: #e7e7e7;
 }
 .navbar-default .navbar-nav > .disabled > a,
 .navbar-default .navbar-nav > .disabled > a:hover,
@@ -4412,11 +4425,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   background-color: transparent;
 }
 .navbar-default .navbar-toggle {
-  border-color: #ddd;
+  /* border-color: #ddd; */
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-  background-color: #ddd;
+  /* background-color: #ddd; */
 }
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #888;
@@ -4452,6 +4465,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     color: #ccc;
     background-color: transparent;
   }
+	#gs-nav ul.navbar-nav {
+		float: none;
+		text-align:center;
+	}
 }
 .navbar-default .navbar-link {
   color: #777;
@@ -6574,7 +6591,6 @@ button.close {
     display: none !important;
   }
 }
-/*# sourceMappingURL=bootstrap.css.map */
 
  /* shrink nav */
 
@@ -6590,12 +6606,17 @@ nav.navbar.shrink {
 nav.shrink a {
   padding-top: 10px !important;
   padding-bottom: 10px !important;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 nav.shrink .navbar-brand {
   font-size: 25px;
 }
+
+nav.shrink .navbar-brand img{
+  display:none;
+}
+
 
 nav.shrink .navbar-toggle {
   padding: 10px 7px;
@@ -6614,12 +6635,8 @@ nav.shrink  .navbar-nav {
 
 /* end shrink nav */	
 
-
-.navbar-header .navbar-brand {
-			background: url('../img/GlowingSmilesLogo.png') no-repeat center center;
-			height:61px;
-			width:143px;
-			text-indent:-999999px;
-		}
-
-.section h2, h2.section {margin-top:100px;}
+.section {
+	margin-top:-75px;
+	padding-top:75px;
+}
+#sponsors, #about, #linasstory {margin-top:50px;}
