@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Glowing Smiles</title>
-
     <!-- Bootstrap -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-	<link href='http://fonts.googleapis.com/css?family=Average+Sans|Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/gs-custom.css" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Average+Sans|Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
 	<!--<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>-->
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -16,94 +16,50 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-	<style>
-		/*.show-grid [class^=col-] {
-				padding-top: 10px;
-				padding-bottom: 10px;
-				background-color: #eee;
-				background-color: rgba(86,61,124,.15);
-				border: 1px solid #ddd;
-				border: 1px solid rgba(86,61,124,.2);
-		} */
-		h1 {margin-top:100px;}
-		footer{height:400px;}
-		
-		.jumbotron {
-			background: #ffffff url('img/spotlight_jumbo.png') no-repeat;
-			-webkit-background-size: cover;
-			-moz-background-size: cover;
-			-o-background-size: cover;
-			background-size: cover;
-		}
-		@media (min-width:300px) and (max-width:991px) {
-			.jumbotron {
-				/*background: #ffffff url('img/spotlight_jumbo_1000_02.png') no-repeat;*/
-				background-position-x:0%;
-				-webkit-background-size: cover;
-				-moz-background-size: cover;
-				-o-background-size: cover;
-				background-size: cover;
-			} // idea for jumbotron image
-		}
-	</style>
   </head>
-  
   <body data-spy="scroll" data-target=".navbar-default">
 	<header>
-		<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="jumbotron">
+		<div class="container">
+		<h1><img src="img/GlowingSmilesLogo.png" alt="Glowing Smiles" class="img-responsive" />5k Run/Walk and Kids Dash</h1>
+		<span class="jumbotron-label">When</span>
+		<p class="date">May 7, 2015</p>
+		<span class="jumbotron-label">Where</span>
+		<p class="location">Orchid Heights Park<br>Middleton, Wisconsin</p>
+		<span class="jumbotron-label">In Support for:</span>
+		<p>Lina Vergara Memorial Scholarship Fundraiser</p>
+		<a class="btn btn-primary btn-lg" href="https://www.signmeup.com/site/reg/register.aspx?fid=DL2VMH7" role="button">Register now</a>
+		</div>
+	</div>
+	</header>
+	<nav class="navbar navbar-default navbar-static-top">
 			<div class="container">
 				<div class="row">
-				<div class="col-md-12">
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#gs-nav">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="#top">Glowing Smiles
-						<img src="img/GlowingSmilesLogo.png" class="img-responsive" />
-					</a>
-				</div>
-				
 				<div class="collapse navbar-collapse" id="gs-nav">
 					<ul class="nav navbar-nav">
-						<li><a href="https://www.signmeup.com/site/reg/register.aspx?fid=D92VVH7" target="_blank"><strong>Register now</strong></a></li>
+						<li><a href="#top" class="sm-logo">Home</a></li>
 						<li><a href="#eventinfo" class="active">Event Info</a></li>
 						<li><a href="#sponsors">Sponsors</a></li>
 						<li><a href="#about">About</a></li>
 						<li><a href="#linastory">Lina's Story</a></li>
-						<li><a id="nav-fb" href="https://www.facebook.com/pages/Glowing-Smiles-5k-and-Kids-Fun-Dash/377912885630641?fref=ts" target="_blank" class="last">Facebook</a></li>            
+						<!-- <li><a id="nav-fb" href="https://www.facebook.com/pages/Glowing-Smiles-5k-and-Kids-Fun-Dash/377912885630641?fref=ts" target="_blank" class="last">Facebook</a></li> -->            
 					</ul>
 				</div>
 				</div>
 			</div>
 			</div>
 		</nav><!-- end nav -->
-	</header>
-	<div class="jumbotron">
-		<div class="container">
-		<h1>Glowing Smiles<br>5k Run/Walk and Kids Dash</h1>
-		<span class="jumbotron-label">When</span>
-		<p class="date">May 9, 2015</p>
-		<span class="jumbotron-label">When</span>
-		<p class="location">Orchid Heights Park<br>Middleton, Wisconsin</p>
-		<span class="jumbotron-label">In Support for:</span>
-		<p>Lina Vergara Memorial Scholarship Fundraiser</p>
-		<a class="btn btn-primary btn-lg" href="#" role="button">Register now</a>
-		</div>
-	</div>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-10 col-md-offset-1">
+				<!-- <a   class="anchor"></a> -->
 				<section class="section" id="eventinfo">
 					<h2>Event Information</h2>
 					<p>We are excited to present the Third Annual Glowing Smiles 5K Run/Walk and Kids Dash, which will be held on Saturday, May 9, 2015 at Orchid Heights Park. Adults and children of all ages, from Middleton and the State of Wisconsin, will join together in memory of Lina Vergara and to support the Lina Vergara Memorial Scholarship Fundraiser.</p>
 					<h3>Race Day</h3>
 					<p>Be on time, so you don't miss all the fun!</p>
 					<p>Starting at 9:00 AM, we will have awesome activities, including a raffle for the race participants, important announcements, refreshments, warm up exercises, face painting, balloon animals and the Kids Dash. Make sure you leave home early, so you can enjoy this day with your family and friends!</p>
-					<h4>Schedule</h4>
+					<h3>Schedule</h3>
 					<ul>
 						<li>9:15 AM &ndash; Kids Dash</li>
 						<li>10:00 AM &ndash; 5k Run/Walk</li>
@@ -111,13 +67,28 @@
 					<h3>Special Hotel Rate for our Participants</h3>
 					<p>For those who live in another city and are traveling to Middleton for our race, you can use the special “friends and family rate” of $59.00 per night to stay at the Fairfield Inn and Suites (standard room) or $69.00 at the Residence Inn (studio suite), both located in Middleton.</p>
 					<h3>Cost</h3>
-					<ul>
-						<li>$25 per person</li>
-						<li>$30 per person after March 15th</li>
-						<li>$35 per person after April 15th</li>
-						<li>Kids Dash is free!</li>
-					</ul>
-					<a href="https://www.signmeup.com/site/reg/register.aspx?fid=D92VVH7" target="_blank" class="btn btn-default" role="button">Register now</a>
+					
+					<table class="table table-bordered">
+						<tr>
+							<th>Age</th>
+							<th>Early entry</th>
+							<th>After March 15th</th>
+							<th>After April 15th</th>
+						</tr>
+						<tr>
+							<td>Adults</td>
+							<td>$25</td>
+							<td>$30</td>
+							<td>$35</td>
+						</tr>
+						<tr>
+							<td>Kids</td>
+							<td>Free!</td>
+							<td>Free!</td>
+							<td>Free!</td>
+						</tr>
+					</table>
+					<a href="https://www.signmeup.com/site/reg/register.aspx?fid=DL2VMH7" target="_blank" class="btn btn-default" role="button">Register now</a>
 				</section>
 			</div>
 		</div>
@@ -127,7 +98,7 @@
 					<h2>Sponsors</h2>
 					<p>While the primary focus of the race is to bring people together, it is also an opportunity to give back. As an important member of the local business community we are looking to you for your support. Please join us by making a monetary contribution or a gift donation to the Glowing Smiles 5K Run/Walk.</p>
 					<p>You have the opportunity to truly make a difference, while bringing awareness to your business. Your monetary donation will support the race and the Lina Vergara Memorial Scholarship a community event with more than 350 participants. Gift certificates and merchandise received are used as incentives to the top participants and in return will bring people to your business.</p>
-					<a href="mailto:glowingsmiles5k@gmail.com" target="_blank" class"btn btn-default" role="button">Become a sponsor</a>
+					<a href="mailto:glowingsmiles5k@gmail.com" target="_blank" class"btn btn-default" role="button" class="btn btn-default">Become a sponsor</a>
 					<h3>Platinum</h3>
 					<div class="row platinum show-grid">
 						<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"><img src="img/sponsors/platinum_01.png" alt="WFS" class="img-responsive" /></div>
@@ -197,59 +168,17 @@
 	
 		<div class="row">
 			<div class="col-md-9 col-md-offset-1">
-					<h2 class="section" id="about">About</h2>
-			</div>
-		</div>
-		
-		<div class="row">
-			<div class="col-md-10 col-md-offset-1">
-				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-					<!-- Indicators -->
-					<ol class="carousel-indicators">
-						<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-						<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-						<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-					</ol>
-
-					<!-- Wrapper for slides -->
-					<div class="carousel-inner" role="listbox">
-						<div class="item active">
-							<img src="img/gs_female_winners_2014.png" alt="2014 Female winners (left to right): Debra Vaughan, (name unavailable), and Melissa Landsee">
-							<div class="carousel-caption">
-								<caption>2014 Female winners (left to right): Debra Vaughan, (name unavailable), and Melissa Landsee</caption>
-							</div>
-						</div>
-						<div class="item">
-							<img src="img/gs_male_winners_2014.png" alt="2014 Male winners (left to right): Danny Chavez, Tony Falk, and Aaron Schut">
-							<div class="carousel-caption">
-								<caption>2014 Male winners (left to right): Danny Chavez, Tony Falk, and Aaron Schut</caption>
-							</div>
-						</div>
-						<div class="item">
-							<img src="img/thankyou.png" alt="Thank you to all of the supporters">
-							<div class="carousel-caption">
-								<caption>Thank you to everyone that has helped our cause!</caption>
-							</div>
-						</div>
-					 </div> <!--Close carousel inner-->
-					<!-- Controls -->
-					<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-						<span class="sr-only">Previous</span>
-					</a>
-					<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-						<span class="sr-only">Next</span>
-					</a>
-				</div> <!--close gener carousel example -->
-			</div><!-- close column -->
-		</div><!--close row-->
-			<div class="row">
-				<div class="col-md-9 col-md-offset-1">
-					<section id="linasstory">
+				<section class="section" id="about">
+					<h2>About</h2>
 						<p>The Glowing Smiles 5k run / walk and kids fun dash is a fundraiser for the Lina Vergara Memorial Scholarship at UW-Oshkosh. Lina had a passion for teaching and caring for everyone’s needs. The scholarship will benefit elementary education students who share Lina’s desire to teach and assist others, especially those students at UW-Oshkosh that are adjusting to campus life or are struggling emotionally with the challenges they often face in college. Please register today and check back for event updates. We're also on Facebook.</p>
 						<p>We want to thank previous participants and sponsors from the bottom of our hearts for your tremendous support. Your contribution has not only been a tribute to our daugther and sister Lina Vergara, but will also benefit elementary education students who share Lina’s desire to teach and assist others, especially those students at UW-Oshkosh.</p>
-						<p>Thanks to your generous donation, we were able to award the 2014 Lina Vergara Memorial Endowment Scholarship to Melissa Koenig and 2014 Lina Vergara Middleton High School Memorial Scholarship to Sarah Pongratz!</p>
+						<p>Thanks to your generous donation, we were able to award the 2015 Lina Vergara Memorial Endowment Scholarship to Danielle Perry from UW Oshkosh and 2015 Lina Vergara Middleton High School Memorial Scholarship to Michelle Xie from Middleton High School!</p>
+							<img src="img/thankyou.png" alt="Thank you to all of the supporters"  class="img-responsive" />
+							<h4>2015 Winners</h4>
+							<img src="img/gs_female_winners_2015.png" alt="2014 Female winners (left to right): Debra Vaughan, (name unavailable), and Melissa Landsee"  class="img-responsive" />
+							<figure>(left to right): Cindy Hovey (1st), Melissa Landsee (3rd), Vanessa Theis (2nd)</figure>
+							<img src="img/gs_male_winners_2015.png" alt="2015 Male winners (left to right): Danny Chavez, Tony Falk, and Aaron Schut"  class="img-responsive" />
+							<figure>(left to right): Brody Brian (3rd), Danny Chavez (2nd), Ben Bauch (1st)</figure>
 				</section>
 			</div>
 		</div>
@@ -283,9 +212,6 @@
 			$('ul a').smoothScroll();
     	$('.spotlight-slide').unslider();
 		});
-		$(document).on('click',function(){
-			$('.collapse').collapse('hide');
-		})
 	</script>
   </body>
 </html>

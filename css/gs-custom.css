@@ -1,0 +1,265 @@
+/*Glowing Smiles custom styling
+*/
+
+body p {
+	font-size: 1.2em;
+	line-height:1.6;
+	margin-bottom:20px;
+}
+h2{
+	margin-bottom:10px;
+}
+h3 {
+	margin-top:35px;
+}
+#sponsors h3 {
+	margin-top:60px;
+}
+
+img + h4 {
+	margin-top:30px;
+}
+
+figure + img {
+	margin-top: 30px;
+}
+
+ /* SHRINK NAV */
+nav.navbar.shrink {
+		min-height: 35px;
+		-webkit-transition: height;
+		transition-property:height;
+		transition-duration:2s;
+		transition-timing-function:ease;
+}
+nav.shrink a {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  font-size: 16px;
+}
+nav.shrink .navbar-brand {
+  font-size: 25px;
+}
+nav.shrink .navbar-brand img{
+  display:none;
+}
+nav.shrink .navbar-toggle {
+  padding: 10px 7px;
+  margin: 13px 0px 8px 0;
+}
+nav.shrink .navbar-header .navbar-brand, .navbar-fixed-top .navbar-nav .sm-logo {
+	background: url('../img/GlowingSmilesIcon.png') no-repeat 12px center;
+	text-indent:-999999px;
+	display:inherit;
+  background-position-y: 18px;
+}
+.navbar-nav .sm-logo {
+	display:none;
+}
+
+/* nav.shrink  .navbar-nav {
+	margin: 11px 0 0 0px;
+} */
+/* end shrink nav */	
+h1 {
+	margin-top:0px;
+}
+footer{
+	height:400px;
+	background-color: #333;
+	padding-top:6%;
+	margin-top:200px;
+}
+footer p {
+	color: #fff;
+}
+.section {
+	margin-top:-85px;
+	padding-top:90px;
+}
+
+/* JUMBOTRON */
+.jumbotron .navbar {
+	margin-bottom:20px;
+}
+.jumbotron {
+	background: #ffffff url('../img/spotlight_jumbo.png') no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+@media (min-width:300px) and (max-width:991px) {
+		.jumbotron {
+			background-position-x:0%;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+}
+.jumbotron .btn-primary {
+	margin-top:30px;
+	margin-bottom:50px;
+	padding:20px 32px;
+	font-size:21px;
+}
+.jumbotron {
+  padding: 30px 15px;
+  color: inherit;
+	margin-bottom:0px;
+  background-color: #eee;
+}
+.jumbotron h1,
+.jumbotron .h1 {
+  color: #FFF;
+}
+.jumbotron p {
+  margin-bottom: 15px;
+  font-size: 25px;
+  font-weight: 200;
+  color:#fff;
+}
+.jumbotron span.jumbotron-label {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #33cc66;
+  display:block;
+  margin-top:30px;
+}
+@media screen and (min-width: 768px) {
+		.jumbotron {
+			padding:30px 0px 0px;
+		}
+		.container .jumbotron,
+		.container-fluid .jumbotron {
+		padding-right: 60px;
+		padding-left: 60px;
+		}
+}
+.jumbotron h1,
+.jumbotron .h1 {
+	font-size: 50px;
+	font-family: 'Average Sans', sans-serif;
+}
+.jumbotron h2 {
+	font-size: 30px;
+	color:#fff;
+}
+/* END JUMBOTRON */
+a:hover {
+	text-decoration:underline;
+}
+	/* BUTTONS */
+.btn-primary {
+	color: #fff;
+	background-color:#268f52;
+	border:none;
+		-o-transition:.25s;
+		-ms-transition:.25s;
+		-moz-transition:.25s;
+		-webkit-transition:.25s;
+		transition:.25s;
+}
+.jumbotron .btn-primary {
+	margin-top:30px;
+	margin-bottom:50px;
+	padding:20px 32px;
+	font-size:21px;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary.focus,
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  color: #fff;
+  background-color: #0f6834;
+}
+.btn-default:hover, .btn-default {
+	border:none;
+	color:#fff;
+	margin-top:20px;
+}
+@media (max-width: 420px){
+	.btn{
+		width: 100%;
+		padding:15px;
+	}
+	.jumbotron h1 {
+		font-size:30px;
+	}
+	.jumbotron img {
+		width:75%;
+		margin-bottom:10px;
+	}
+	.jumbotron span.jumbotron-label {
+		margin-top:20px;
+		font-size:12px;
+	}
+	.jumbotron p {
+		font-size:20px;
+	}
+/* 	nav {
+		display:none;
+		} */
+	h2 {
+		margin-top: 60px;
+	}
+	h3 {
+		margin-top: 35px;
+	}
+	h3 {
+		margin-top: 30px;
+	}
+	ul {
+		padding-left:30px;
+	}
+}
+/*_______________ 
+
+.navbar-brand {
+	padding-top:8px;
+	padding-bottom:8px;
+}
+/* END BUTTONS */
+@media (max-width:768px){
+	nav {
+		display:none;
+		}
+	}
+	a.anchor {
+    display: block;
+    position: relative;
+    top: -250px;
+    visibility: hidden;
+}
+/* ______________________________Update Bootstrap______________*/
+.navbar {
+	background-color:#333;
+}
+@media (min-width: 768px) {
+		.navbar-nav>li>a {
+			padding:20px 40px;
+		}	
+		.navbar-nav {
+			text-align:center;
+			width:100%;
+		}
+		.navbar-nav > li {
+			float:none;
+			display:inline-block;
+		}
+}
+.navbar-nav li.active {
+	background-color:#555;
+}
+.navbar-header .navbar-brand {
+	height: 40px;
+}
+.navbar-header {
+	margin-top:2px;
+}
+
+
+
