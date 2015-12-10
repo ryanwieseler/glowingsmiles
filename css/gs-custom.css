@@ -1,11 +1,11 @@
 /*Glowing Smiles custom styling*/
 body p {
-	font-size: 1.2em;
+	font-size: 1em;
 	line-height:1.6;
 	margin-bottom:20px;
 }
 h2{
-	margin-bottom:10px;
+	margin-bottom:12px;
 	font-weight:bold;
 }
 h3 {
@@ -17,6 +17,11 @@ h3 {
 h4{
 	font-weight:bold;
 }
+.jumbotron p.date {
+	font-weight:bold;
+	margin-top:30px;
+	margin-bottom:0px;
+}
 img + h4 {
 	margin-top:60px;
 }
@@ -24,17 +29,62 @@ figure + img {
 	margin-top: 30px;
 }
 .silver .col-xs-12 {
-	padding:12px 0px;
+	padding:50px 0px;
+}
+.gold p, .platinum p {
+	margin-top:-20px;
+}
+.silver p{
+	margin-top:-30px;
 }
 #sponsors .img-responsive {
     width: 80%;
-    padding-left: 18%;
 }
+#sponsors .location {
+		font-size:.8em;
+}
+#sponsors .platinum, .silver{
+	margin-bottom:4%;
+}
+#sponsors .p9 p, #sponsors .p10 p {
+	margin-top:10px;
+}
+#sponsors .p9 p {
+	margin-right:9%
+}
+.p10 img {
+	margin-top:25px;
+}
+#sponsors .p12 img {
+	width:65%;
+}
+.s1 img {
+	margin-top:-20px;
+}
+.s1 p {
+	margin-top:-12px;
+}
+.s2 img {
+	margin-top:3px;
+}
+.s2 p {
+	margin-top:-34px;
+}
+#sponsors .s8 img {
+	width:70%;
+	margin-bottom:21px;
+}
+
 .navbar-fixed-top .navbar-nav .sm-logo {
 	background: url('../img/GlowingSmilesIcon.png') no-repeat 12px center;
 	text-indent:-999999px;
 	display:inherit;
   background-position-y: 18px;
+	animation: animatedBackground .2s linear;
+}
+@keyframes animatedBackground {
+	from { background-position: -15px -10px; }
+	to { background-position: 5px 18px; }
 }
 .navbar-nav .sm-logo {
 	display:none;
@@ -44,7 +94,7 @@ h1 {
 }
 footer{
 	background-color: #333;
-	padding-top:6%;
+	padding-top:2%;
 }
 footer p {
 	color: #fff;
@@ -59,7 +109,6 @@ footer small {
     background: url("../img/running_group.png") center bottom no-repeat;
     height: 74px;
     width: 100%;
-    margin-top: 100px;
 		margin-bottom:-2px;
 }
 #quote {
@@ -234,6 +283,21 @@ a:hover {
 		margin-bottom: 100px;
 		}
 	}
+.cost-table {
+	margin-top:25px;
+}
+.cost-table tbody tr th {
+    background-color: #922475;
+    color: #fff;
+}
+.cost-table .left-cell {
+	text-align:left;
+}
+.table>thead>tr>th, .table>tbody>tr>th, .table>tbody>tr>td {
+	padding:8px 12px;
+	border:none;
+	text-align: right;
+}
 
 /* ______________________________Update Bootstrap______________*/
 .navbar {
