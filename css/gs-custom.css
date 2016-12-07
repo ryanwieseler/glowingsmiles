@@ -288,18 +288,15 @@ a:hover {
 	}
 .cost-table {
 	margin-top:25px;
+	border-bottom: 1px solid #333;
 }
 .cost-table tbody tr th {
     background-color: #922475;
     color: #fff;
 }
-.cost-table .left-cell {
-	text-align:left;
-}
 .table>thead>tr>th, .table>tbody>tr>th, .table>tbody>tr>td {
 	padding:8px 12px;
 	border:none;
-	text-align: right;
 }
 
 /* ______________________________Update Bootstrap______________*/
@@ -309,7 +306,7 @@ a:hover {
 @media (min-width: 768px) {
 		.navbar-nav>li>a {
 			padding:20px 40px;
-		}	
+		}
 		.navbar-nav {
 			text-align:center;
 			width:100%;
