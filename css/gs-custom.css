@@ -46,11 +46,19 @@ figure{
 #sponsors .location {
 		font-size:.8em;
 }
+#sponsors .two-line-text {
+	position: absolute;
+}
 #sponsors .platinum, .silver{
 	margin-bottom:4%;
 }
 #sponsors .p9 p, #sponsors .p10 p {
 	margin-top:10px;
+}
+#sponsors .hy p {
+	float: left;
+  margin-left: 15%;
+  margin-top: -5px;
 }
 #sponsors .p9 p {
 	margin-right:9%
@@ -60,6 +68,14 @@ figure{
 }
 #sponsors .p12 img {
 	width:65%;
+}
+#sponsors .match-height p {
+	padding-top: 28%;
+	text-align: center;
+}
+#sponsors .match-height {
+	padding-top:10px;
+	padding-bottom:10px;
 }
 .s1 img {
 	margin-top:-20px;
