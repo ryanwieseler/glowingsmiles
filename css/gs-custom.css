@@ -315,6 +315,12 @@ a:hover {
 	border:none;
 }
 
+/* Race Results Table */
+.race-results-year {background-color: #F4E9F1;}
+.race-results-table .race-results-year > th {padding-top:2px; padding-bottom:2px;}
+.race-results-table .place {width:8%;}
+
+
 /* ______________________________Update Bootstrap______________*/
 .navbar {
 	background-color:#333;
