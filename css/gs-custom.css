@@ -60,6 +60,9 @@ figure{
   margin-left: 15%;
   margin-top: -5px;
 }
+.wells-plat {
+	margin-top:-19%;
+}
 #sponsors .p9 p {
 	margin-right:9%
 }
@@ -88,6 +91,9 @@ figure{
 }
 .s2 p {
 	margin-top:-34px;
+}
+.silver .loc-zero {
+	margin-top:0;
 }
 #sponsors .s8 img {
 	width:70%;
