@@ -325,6 +325,9 @@ a:hover {
 .race-results-year {background-color: #F4E9F1;}
 .race-results-table .race-results-year > th {padding-top:2px; padding-bottom:2px;}
 .race-results-table .place {width:8%;}
+.race-results-table .categories {width:20%; font-weight: bold;}
+.race-results-table .col-w {width: 30%;}
+.current.race-results-table td, .current.race-results-table th {padding-left:0;}
 
 
 /* ______________________________Update Bootstrap______________*/
