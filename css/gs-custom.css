@@ -158,6 +158,9 @@ section {
 }
 
 /* JUMBOTRON */
+.hero-message{
+	width:50%;
+}
 .jumbotron .navbar {
 	margin-bottom:20px;
 }
@@ -175,6 +178,9 @@ section {
 			-moz-background-size: cover;
 			-o-background-size: cover;
 			background-size: cover;
+		}
+		.hero-message{
+			width:100%;
 		}
 }
 .jumbotron .btn-primary, .jumbotron .btn-info  {
