@@ -222,6 +222,7 @@ section {
 		padding-right: 60px;
 		padding-left: 60px;
 		}
+		.jumbotron h1 {width: 50%;}
 }
 .jumbotron h1,
 .jumbotron .h1 {
