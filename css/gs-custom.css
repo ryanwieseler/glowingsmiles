@@ -40,6 +40,12 @@ figure{
 .silver p{
 	margin-top:-30px;
 }
+.silver .close {
+	margin-top: 0;
+}
+.silver .med {
+	margin-top: -20px;
+}
 #sponsors .img-responsive {
     width: 80%;
 }
@@ -155,6 +161,9 @@ section {
 	margin-bottom:200px;
 	margin-top:-65px;
 	padding-top:130px;
+}
+section#pac-pic {
+	margin-bottom: 0px;
 }
 
 /* JUMBOTRON */
