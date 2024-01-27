@@ -1,4 +1,5 @@
 /*Glowing Smiles custom styling*/
+a {color: #9147FF}
 body p {
 	font-size: 1em;
 	line-height:1.6;
@@ -194,10 +195,19 @@ section#pac-pic {
 }
 .jumbotron .btn-primary, .jumbotron .btn-info  {
 	margin-top:30px;
-	margin-bottom:50px;
+	margin-bottom:8%;
 	margin-right:30px;
 	padding:20px 40px;
 	font-size:21px;
+    border-radius: 40px;
+}
+.jumbotron .btn-info  {
+    color: #333;
+    background-color: #fff;
+}
+.btn-info:hover {
+    color: #000;
+    background-color: #Eeeeee;
 }
 .jumbotron {
   padding: 30px 15px;
@@ -260,6 +270,7 @@ a:hover {
 	background-color:#268f52;
 	padding: 10px 20px;
 	margin-top:10px;
+    border-radius: 40px;
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -275,8 +286,19 @@ a:hover {
 	color:#fff;
 	margin-top:20px;
 }
+.comm-actions {
+    margin-top: 36px;
+}
+.sec-link {
+    margin-left: 2%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.comm-actions .btn-primary {
+    margin-top:0px;
+}
 @media (max-width: 627px){
-		.jumbotron .btn-primary {
+		.jumbotron .btn-primary, .jumbotron .btn-info {
 		margin-bottom: 20px;
 	}
 	.jumbotron .btn-info {
@@ -314,6 +336,12 @@ a:hover {
 	ul {
 		padding-left:30px;
 	}
+    .comm-actions a.sec-link {
+        width: 100%;
+        text-align: center;
+        margin-top: 24px;
+        margin-left: 0px;
+    }
 }
 /* END BUTTONS */
 @media (max-width:768px){
@@ -352,7 +380,10 @@ a:hover {
 }
 @media (min-width: 768px) {
 		.navbar-nav>li>a {
-			padding:20px 40px;
+			padding-top: 16px;
+            padding-bottom: 16px;
+            padding-left: 32px;
+            padding-right: 32px;
 		}
 		.navbar-nav {
 			text-align:center;
