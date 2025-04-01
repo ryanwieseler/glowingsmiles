@@ -135,23 +135,29 @@ footer p {
 	color: #fff;
 }
 footer small {
-    color: #777;
+    color: #999;
     text-align: center;
     padding-bottom: 7px;
     display: block;
+}
+footer .disclaimers small {
+    margin-bottom: 20px
+}
+.disclaimers a{
+    color: #CC99FF;
 }
 #runners {
     background: url("../img/running_group.png") center bottom no-repeat;
     height: 74px;
     width: 100%;
-		margin-bottom:-2px;
+    margin-bottom:-2px;
 }
 #quote {
     background: url(../img/foot_butterfly.png) 100% no-repeat transparent;
     background-position-x: 94%;
     background-position-y: 58%;
     padding: 52px;
-		margin-bottom: 100px;
+    margin-bottom: 16px;
 }
 .line, .lineDark {
 	border-bottom:1px solid #fff;
