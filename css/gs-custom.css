@@ -143,6 +143,21 @@ footer small {
 footer .disclaimers small {
     margin-bottom: 20px
 }
+.footer-links {
+    color: white;
+    list-style-type: none;
+    margin: 0 0 5% 0;
+    display: block;
+    padding: 0;
+    text-align: center;
+}
+.footer-links li{ 
+    display: inline-block;
+    margin-right: 2%;
+}
+.footer-links .copy{
+    color: #999;
+}
 .disclaimers a{
     color: #CC99FF;
 }
@@ -157,7 +172,7 @@ footer .disclaimers small {
     background-position-x: 94%;
     background-position-y: 58%;
     padding: 52px;
-    margin-bottom: 16px;
+    margin-bottom: 36px;
 }
 .line, .lineDark {
 	border-bottom:1px solid #fff;
